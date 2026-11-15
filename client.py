@@ -8,7 +8,7 @@ WIDTH, HEIGHT = 800, 600
 init()
 screen = display.set_mode((WIDTH, HEIGHT))
 clock = time.Clock()
-display.set_caption("Пінг-Понг")
+display.set_caption("9934fefb-b0fa-49a0-8087-f12278706fa4")
 # ---СЕРВЕР ---
 def connect_to_server():
     while True:
@@ -54,6 +54,7 @@ while True:
     for e in event.get():
         if e.type == QUIT:
             exit()
+        screen.blit(bg, (0,0))
 
     if "countdown" in game_state and game_state["countdown"] > 0:
         screen.fill((0, 0, 0))
